@@ -10,15 +10,12 @@
       if (typeof(Storage) === "undefined") {
         alert("Web Strage Not Supported");
       } else {
-        localStorage.setItem("fukuda", "udon");
-        localStorage.setItem("ima", "michu");
+        localStorage.setItem("fukuda", 90);
+        localStorage.setItem("ima", 88);
 
-        sessionStorage.setItem("chiho", "setouchi");
-        sessionStorage.setItem("sakaki", "cuka");
-
-        localStorage.removeItem("fukuda");
-        sessionStorage.clear();
-
+        for (var i = 0; i <localStorage.length; i++) {
+          console.log(localStorage.key(i) + ': ' + localStorage.getItem(localStorage.key(i)));
+        }
       }
     })();
   </script>
