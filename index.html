@@ -1,1 +1,20 @@
-Hello, world.
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Strage</title>
+</head>
+<body>
+  <script>
+    (function () {
+      if (typeof(Storage) === "undefined") {
+        alert("Web Strage Not Supported");
+      } else {
+        // localStorage.setItem("name", "oki");
+        // console.log("name saved!");
+        console.log(localStorage.getItem("name"));
+      }
+    })();
+  </script>
+</body>
+</html>

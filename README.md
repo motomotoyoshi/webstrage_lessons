@@ -1,1 +1,1 @@
-My WebStrage lesson.
+My Web Strage lesson.
