@@ -10,13 +10,11 @@
       if (typeof(Storage) === "undefined") {
         alert("Web Strage Not Supported");
       } else {
-        var user = {
-          name: "takino",
-          score: 80
-        };
+        localStorage.setItem("name", "minami");
 
-        localStorage.setItem("user", JSON.stringify(user));
-        console.dir(JSON.parse(localStorage.getItem("user")));
+        window.addEventListener("storage", function(e) {
+          console.log(e.key + ": " + e.oldValue + "->" + e.newValue);
+        });
       }
     })();
   </script>
